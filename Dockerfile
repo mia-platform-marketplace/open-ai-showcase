@@ -12,17 +12,17 @@ RUN npm install
 
 COPY . .
 
-RUN echo "test-openai: $COMMIT_SHA" >> ./commit.sha
+RUN echo "mia_template_service_name_placeholder: $COMMIT_SHA" >> ./commit.sha
 
 ########################################################################################################################
 
 FROM node:16.15.0-alpine
 
-LABEL maintainer="giulio" \
-      name="test-openai" \
-      description="Test of OpenAI." \
+LABEL maintainer="%CUSTOM_PLUGIN_CREATOR_USERNAME%" \
+      name="mia_template_service_name_placeholder" \
+      description="%CUSTOM_PLUGIN_SERVICE_DESCRIPTION%" \
       eu.mia-platform.url="https://www.mia-platform.eu" \
-      eu.mia-platform.version="0.1.0"
+      eu.mia-platform.version="0.0.1"
 
 ENV NODE_ENV=production
 ENV LOG_LEVEL=info
@@ -38,4 +38,4 @@ RUN chown -R node:node /home/node/app
 RUN npm run build
 USER node
 
-CMD ["npm", "-s", "start"]
+CMD ["npm", "-s", "start", "--", "--port", "${HTTP_PORT}", "--log-level", "${LOG_LEVEL}", "--prefix=${SERVICE_PREFIX}"]
