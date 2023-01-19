@@ -38,4 +38,4 @@ RUN chown -R node:node /home/node/app
 RUN npm run build
 USER node
 
-CMD ["npm", "-s", "start", "--", "--port", "${HTTP_PORT}", "--log-level", "${LOG_LEVEL}", "--prefix=${SERVICE_PREFIX}"]
+CMD ["npm", "-s", "start", "--", "--port", "${HTTP_PORT}"]
