@@ -1,4 +1,4 @@
-# Open API Showcase
+# OpenAI Showcase
 
 ## Summary
 
