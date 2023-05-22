@@ -20,7 +20,7 @@ To run locally the application you should complete the following tasks
 cp .env.example .env
 ```
 
-### Configure the Open API Key variable named `OPENAI_API_KEY`
+### Configure the OpenAI Key variable named `OPENAI_API_KEY`
 
 ```shell
 vi .env
@@ -40,20 +40,23 @@ Then you can open the application on the local url [http://localhost:3000/](http
 ## Build a Docker Image
 
 ```shell
-docker build -t open-api-showcase:0.0.1 .
+docker build -t open-ai-showcase:0.0.1 .
 ```
 
 to test it
 
 ```shell
-docker run -p 3000:3000 --name open-api-showcase open-api-showcase:0.0.1
+docker run -p 3000:3000 --name open-ai-showcase open-ai-showcase:0.0.1
 ```
 
 Then you can open the application on the local url [http://localhost:3000/](http://localhost:3000/)
 
 ## Usage with Mia-Platform
 
-Open Mia-Platform Marketplace, search for Open API Playground and enjoy :-)
+Open Mia-Platform Marketplace, search for 
+
+
+Playground and enjoy :-)
 
 ## Configuration
 
