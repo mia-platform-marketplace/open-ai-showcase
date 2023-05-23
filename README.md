@@ -52,7 +52,7 @@ Then you can open the application on the local url [http://localhost:3000/](http
 
 ## Usage with Mia-Platform
 
-Open Mia-Platform Marketplace, search for Open API Playground and enjoy :-)
+Open Mia-Platform Marketplace, search for Open API Playground, create the microservice, expose it through and endpoint on `/` base path and enjoy :-)
 
 ## Configuration
 
