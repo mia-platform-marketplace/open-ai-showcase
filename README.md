@@ -4,7 +4,7 @@
 
 This is an example of frontend application that allows to ask to Open AI some questions or write something ( like source code, YAML, scripts...).
 
-The application uses Next.js with React. 
+The application uses Next.js with React.
 
 This is a Free, Open Source template, under Apache2 License. Feel free to propose improvements and contribute.
 
@@ -19,7 +19,7 @@ To run locally the application you should complete the following tasks
 cp .env.example .env
 ```
 
-### Configure the Open API Key variable named `OPENAI_API_KEY`
+### Configure the OpenAI API Key variable named `OPENAI_API_KEY`
 
 ```shell
 vi .env
@@ -39,20 +39,20 @@ Then you can open the application on the local url [http://localhost:3000/](http
 ## Build a Docker Image
 
 ```shell
-docker build -t open-api-showcase:0.0.1 .
+docker build -t open-ai-showcase:0.0.1 .
 ```
 
 to test it
 
 ```shell
-docker run -p 3000:3000 --name open-api-showcase open-api-showcase:0.0.1
+docker run -p 3000:3000 --name open-ai-showcase open-ai-showcase:0.0.1
 ```
 
 Then you can open the application on the local url [http://localhost:3000/](http://localhost:3000/)
 
 ## Usage with Mia-Platform
 
-Open Mia-Platform Marketplace, search for Open API Playground, create the microservice, expose it through and endpoint on `/` base path and enjoy :-)
+Open Mia-Platform Marketplace, search for OpenAI Playground, create the microservice, expose it through and endpoint on `/` base path and enjoy :-)
 
 ## Configuration
 
