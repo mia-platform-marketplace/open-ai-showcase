@@ -1,5 +1,7 @@
 # OpenAI Showcase
 
+> ⚠️ Warning: This repository is no longer maintained.
+
 ## Summary
 
 This is an example of frontend application that allows to ask to Open AI some questions or write something ( like source code, YAML, scripts...).
